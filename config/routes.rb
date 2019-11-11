@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   end
 
   root "posts#index"
+
+  #static page
+  # now i can access localhost:port/about insted localhost:port/pages/about
+  get '/about', to: 'pages#about'
 end
